@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="temper.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Temperature Converter</title>
+    <script src="temp.js"></script>
+    <link rel="icon" type="image" href="download.jpg">
+</head>
+<body>              
+    <div class="head">
+        <header class="container-fluid">
+            <h1>TEMPERATURE CONVERTOR</h1>
+        </header>
+    </div>
+    <div class="back">
+        <section class="container-fluid pad">
+            <div class="row">
+                <div class="col-6">
+                    <label for="num" style="float: right;">Enter The Value:</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" name="Number" id="num" autocomplete="off" height="35px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="from" style="float: right;">From:</label>
+                </div>
+                <div class="col-6">
+                    <select name="from" id="from">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="to" style="float: right;">To:</label>
+                </div>
+                <div class="col-6">
+                    <select name="to" id="to">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" id="btn" onclick="tempe()">Convert</button>
+            <div class="row">
+                <div class="col-6">
+                    <label for="result" style="float: right;">Result:</label>
+                </div>
+                <div class="col-6">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="foot">
+        <footer class="container-fluid">
+            <div style="padding:10px;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
